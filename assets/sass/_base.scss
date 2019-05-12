@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+
+$font-page: 'Abel', sans-serif;
+
+$color-yellow: rgb(242, 200, 30);
+$color-black: rgb(23, 25, 30);
+$color-white: rgb(255, 255, 255);
+
+body {
+    font-family: $font-page;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+@mixin clearfix() {
+
+    &:after,
+    &:before {
+        display: table;
+        content: "";
+        clear: both;
+    }
+}
+
+.row {
+    @include clearfix;
+}
