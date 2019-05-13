@@ -39,7 +39,7 @@ header .menu-wrapper #menu-hamburger {
   height: 50px;
   z-index: 9;
   cursor: pointer;
-  transition: right 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+  transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
   background-color: #f2c81e;
   display: -ms-flexbox;
   display: flex;
@@ -85,8 +85,8 @@ header .menu-wrapper #menu-content {
   z-index: 8;
   overflow: auto;
   top: 0;
-  right: -40%;
-  width: 40%;
+  right: -35%;
+  width: 35%;
   opacity: 0.5;
   padding: 20px 0;
   height: 100%;
@@ -156,8 +156,8 @@ header .hero .hero-title {
 
 header .hero .hero-paragraph {
   color: white;
-  font-size: 0.7em;
-  letter-spacing: 1px;
+  font-size: 0.6em;
+  letter-spacing: 0.5px;
   padding-bottom: 10px;
 }
 
@@ -173,6 +173,27 @@ header .hero .hero-button a {
   color: white;
   text-transform: uppercase;
   font-size: 0.8em;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+}
+
+header .hero .hero-button a:hover {
+  text-decoration: none;
+  color: #f2c81e;
+  transition: transform 0.5s;
+}
+
+/* Section motto */
+.motto {
+  background-color: #f2c81e;
+  padding: 40px 0;
+}
+
+.motto .motto-paragraph {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 0.7em;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
