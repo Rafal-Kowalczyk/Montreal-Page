@@ -9,7 +9,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        padding: $padding-section;
 
         #menu-hamburger {
             width: 50px;
@@ -118,8 +118,8 @@ header {
     }
 
     .hero {
-        margin-top: 50px;
-        padding: 20px;
+        margin-top: 20px;
+        padding: $padding-section;
 
         .hero-title {
             color: $color-yellow;
@@ -135,22 +135,23 @@ header {
         }
 
         .hero-button {
+            @include button;
             width: 160px;
-            height: 50px;
-            border: 2px solid $color-yellow;
-            border-radius: 20px;
             background-color: $color-black;
+
+            &:hover a {
+                text-decoration: none;
+                color: $color-yellow;
+                transition: transform 0.5s;
+                cursor: pointer;
+            }
 
             a {
                 color: $color-white;
                 text-transform: uppercase;
                 font-size: 0.8em;
                 letter-spacing: $letter-spacing;
-                &:hover {
-                    text-decoration: none;
-                    color: $color-yellow;
-                    transition: transform 0.5s;
-                }
+
             }
         }
     }
@@ -159,7 +160,8 @@ header {
 /* Section motto */
 .motto {
     background-color: $color-yellow;
-    padding: 40px 0;
+    padding: 50px 0;
+
     .motto-paragraph {
         margin: 0 auto;
         width: 80%;
@@ -167,5 +169,48 @@ header {
         letter-spacing: $letter-spacing;
         line-height: 1.2;
         font-weight: bold;
+    }
+}
+
+/* Section Services */
+.services {
+    padding: $padding-section;
+    margin: 50px 0;
+
+    .services-icon {
+        width: 75px;
+        height: 75px;
+        background-color: $color-yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .services-title {
+        color: $color-yellow;
+        text-transform: uppercase;
+    }
+
+    .services-paragraph {
+        font-size: 0.8em;
+        line-height: 1.1;
+        margin-bottom: 40px;
+    }
+
+    .services-button {
+        @include button;
+        width: 240px;
+        background-color: $color-white;
+        color: $color-black;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        margin: 20px auto;
+
+        //outline: none;
+        &:hover {
+            background-color: $color-yellow;
+            cursor: pointer;
+        }
     }
 }

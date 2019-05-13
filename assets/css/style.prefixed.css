@@ -31,7 +31,7 @@ header .menu-wrapper {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  padding: 20px;
+  padding: 20px 30px;
 }
 
 header .menu-wrapper #menu-hamburger {
@@ -144,8 +144,8 @@ header .menu-wrapper #menu-content {
 }
 
 header .hero {
-  margin-top: 50px;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 20px 30px;
 }
 
 header .hero .hero-title {
@@ -162,11 +162,18 @@ header .hero .hero-paragraph {
 }
 
 header .hero .hero-button {
-  width: 160px;
-  height: 50px;
   border: 2px solid #f2c81e;
   border-radius: 20px;
+  height: 50px;
+  width: 160px;
   background-color: #17191e;
+}
+
+header .hero .hero-button:hover a {
+  text-decoration: none;
+  color: #f2c81e;
+  transition: transform 0.5s;
+  cursor: pointer;
 }
 
 header .hero .hero-button a {
@@ -176,16 +183,10 @@ header .hero .hero-button a {
   letter-spacing: 0.5px;
 }
 
-header .hero .hero-button a:hover {
-  text-decoration: none;
-  color: #f2c81e;
-  transition: transform 0.5s;
-}
-
 /* Section motto */
 .motto {
   background-color: #f2c81e;
-  padding: 40px 0;
+  padding: 50px 0;
 }
 
 .motto .motto-paragraph {
@@ -195,5 +196,52 @@ header .hero .hero-button a:hover {
   letter-spacing: 0.5px;
   line-height: 1.2;
   font-weight: bold;
+}
+
+/* Section Services */
+.services {
+  padding: 20px 30px;
+  margin: 50px 0;
+}
+
+.services .services-icon {
+  width: 75px;
+  height: 75px;
+  background-color: #f2c81e;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 30px;
+}
+
+.services .services-title {
+  color: #f2c81e;
+  text-transform: uppercase;
+}
+
+.services .services-paragraph {
+  font-size: 0.8em;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.services .services-button {
+  border: 2px solid #f2c81e;
+  border-radius: 20px;
+  height: 50px;
+  width: 240px;
+  background-color: white;
+  color: #17191e;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin: 20px auto;
+}
+
+.services .services-button:hover {
+  background-color: #f2c81e;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
