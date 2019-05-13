@@ -21,33 +21,40 @@
 </head>
 
 <body>
-
     <!-- Header -->
-    <header class="container-fluid">
-        <nav class="navbar container">
-            <div class="logo">
+    <header>
+        <div class="menu-wrapper container">
+            <div class="menu-logo">
                 <a href="#">
-                    <img src="./assets/images/Brand.png" alt="Montreal Brand">
+                    <img src="./assets/images/Brand.png" alt="Montreal logo">
                 </a>
             </div>
-            <div class="menu">
-                <div id="hamburger" class="menu-hamburger">
-                    <div id="top"></div>
-                    <div id="middle"></div>
-                    <div id="bottom"></div>
-                </div>
-                <div id="menu-content" class="menu-content">
-                    <ul class="menu-content_items">
-                        <li a="href#">Motto</a></li>
-                        <li a="href#">Services</a></li>
-                        <li a="href#">Portfolio</a></li>
-                        <li a="href#">Clients</a></li>
-                        <li a="href#">Contact</a></li>
-                    </ul>
-                </div>
+            <div id="menu-hamburger">
+                <div id="top" class="habmurger-line"></div>
+                <div id="middle" class="habmurger-line"></div>
+                <div id="bottom" class="habmurger-line"></div>
             </div>
-        </nav>
+            <div id="menu-content">
+                <ul class="menu-content-items">
+                    <li><a href="#">Motto</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="hero container" id="hero">
+            <h1 class="hero-title">Wake the design</h1>
+            <p class="hero-paragraph">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam
+                sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada. Nulla
+                porttitor accumsan tincidunt.</p>
+            <button type="button" class="hero-button">
+                <a href="#">Who we are?</a>
+            </button>
+        </section>
     </header>
+
 
 
     <script src="assets/js/script.js"></script>

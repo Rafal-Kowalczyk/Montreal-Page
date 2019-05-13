@@ -7,7 +7,14 @@ $color-yellow: rgb(242, 200, 30);
 $color-black: rgb(23, 25, 30);
 $color-white: rgb(255, 255, 255);
 
+$easing: cubic-bezier(.6, .05, .28, .91);
+
+
+
 body {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
     font-family: $font-page;
     font-size: 16px;
 }
