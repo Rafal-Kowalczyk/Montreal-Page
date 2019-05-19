@@ -244,33 +244,40 @@ header .hero .hero-button a {
   padding: 30px 0;
 }
 
-.portfolio-images {
+.portfolio-wrapper {
+  background-color: #f2c81e;
+}
+
+.portfolio-wrapper .portfolio-images {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #f2c81e;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
-.portfolio-images .image {
+.portfolio-wrapper .portfolio-images .image_all {
   position: relative;
-  padding: 10px;
+  margin: 10px;
   width: 300px;
+  height: 200px;
+  list-style: none;
 }
 
-.portfolio-images .image img {
+.portfolio-wrapper .portfolio-images .image_all img {
   width: 100%;
-  height: auto;
+  height: 100%;
   cursor: pointer;
 }
 
-.portfolio-images .image:hover .layer {
+.portfolio-wrapper .portfolio-images .image_all:hover .layer {
   opacity: 1;
+  background-color: rgba(23, 25, 30, 0.7);
 }
 
-.portfolio-images .layer {
+.portfolio-wrapper .portfolio-images .layer {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -280,9 +287,10 @@ header .hero .hero-button a {
   height: 100%;
   opacity: 0;
   transition: .5s ease;
+  padding: 10px;
 }
 
-.portfolio-images .layer .layer-text {
+.portfolio-wrapper .portfolio-images .layer .layer-text {
   color: #f2c81e;
   position: absolute;
   left: 15%;
