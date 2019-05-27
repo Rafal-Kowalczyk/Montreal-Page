@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Montreal Page by RK|web</title>
+    <title>Montreal Page by RK | web</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -39,7 +39,7 @@
                     <li><a href="#motto">Motto</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#">Clients</a></li>
+                    <li><a href="#clients">Clients</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
@@ -65,14 +65,6 @@
         <div class="row">
             <div class="col-12 col-md-4">
                 <div class="services-icon">
-                    <img src="./assets/images/service_design.png" alt="Design icon">
-                </div>
-                <h2 class="services-title">Design</h2>
-                <p class="services-paragraph">Soluta consequat no has. Has ex deleniti consulatu, tamquam interpretaris
-                    sit ex vivendum ullamcorper et his.</p>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="services-icon">
                     <img src="./assets/images/service_coding.png" alt="Design icon">
                 </div>
                 <h2 class="services-title">Coding</h2>
@@ -86,92 +78,155 @@
                 <p class="services-paragraph">Soluta consequat no has. Has ex deleniti consulatu, tamquam interpretaris
                     sit ex vivendum ullamcorper et his.</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col text-center">
-                <button type="button" class="services-button">Launch Project Now</button>
+            <div class="col-12 col-md-4">
+                <div class="services-icon">
+                    <img src="./assets/images/service_design.png" alt="Design icon">
+                </div>
+                <h2 class="services-title">Design</h2>
+                <p class="services-paragraph">Soluta consequat no has. Has ex deleniti consulatu, tamquam interpretaris
+                    sit ex vivendum ullamcorper et his.</p>
             </div>
+        </div>
+        <div class="col text-center">
+            <button type="button" class="services-button">Launch Project Now</button>
         </div>
     </section>
     <!-- Section Portfolio -->
     <section class="portfolio" id="portfolio">
         <div class="portfolio-text container">
-            <h2 class="portfolio-title">Works so far ...</h2>
+            <h2 class="portfolio-title text-uppercase">Works so far ...</h2>
             <p class="portfolio-paragraph">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed,
                 convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+
             <div class="row">
-                <div class="col text-center">
-                    <button><a href="#" data-rel="all">All</a></button>
-                    <button><a href="#" data-rel="design">Design</a></button>
-                    <button><a href="#" data-rel="code">Code</a></button>
-                    <button><a href="#" data-rel="photography">Photography</a></button>
-                    <button><a href="#" data-rel="apps">Apps</a></button>
+                <div class="col portfolio-nav">
+                    <button><a href="#" class="nav-item active" data-rel="image_all">All</a></button>
+                    <button><a href="#" class="nav-item" data-rel="apps">Apps</a></button>
+                    <button><a href="#" class="nav-item" data-rel="code">Code</a></button>
+                    <button><a href="#" class="nav-item" data-rel="design">Design</a></button>
                 </div>
             </div>
         </div>
-        <div class="portfolio-images container-fluid">
-            <div class="image">
-                <img src="./assets/images/works_surface-9.jpg" alt="music">
-                <div class="layer">
-                    <div class="layer-text">Wow</div>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./assets/images/work_app-6.jpg" alt="music">
-                <div class="layer">
-                    <div class="layer-text">Wow</div>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./assets/images/works_surface-9.jpg" alt="music">
-                <div class="layer">
-                    <div class="layer-text">Wow</div>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./assets/images/works_surface-9.jpg" alt="music">
-                <div class="layer">
-                    <div class="layer-text">Wow</div>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./assets/images/works_surface-9.jpg" alt="music">
-                <div class="layer">
-                    <div class="layer-text">Wow</div>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./assets/images/works_surface-9.jpg" alt="music">
-                <div class="layer">
-                    <div class="layer-text">Wow</div>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./assets/images/works_surface-9.jpg" alt="music">
-                <div class="layer">
-                    <div class="layer-text">Wow</div>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./assets/images/works_surface-9.jpg" alt="music">
-                <div class="layer">
-                    <div class="layer-text">Wow</div>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./assets/images/works_surface-9.jpg" alt="music">
-                <div class="layer">
-                    <div class="layer-text">Wow</div>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./assets/images/works_surface-9.jpg" alt="music">
-                <div class="layer">
-                    <div class="layer-text">Wow</div>
+        <div class="portfolio-wrapper">
+            <ul class="portfolio-images ">
+                <li class="image_all code">
+                    <img src="./assets/images/work_code.png" alt="Ekran z kodem HTML">
+                    <div class="layer">
+                        <div class="layer-text">Semantic code</div>
+                    </div>
+                </li>
+                <li class="image_all design">
+                    <img src="./assets/images/work_photo.jpg" alt="Obiektywy fotograficzne">
+                    <div class="layer">
+                        <div class="layer-text">Professional equipment</div>
+                    </div>
+                <li class="image_all code">
+                    <img src="./assets/images/work_seo.png" alt="Grafika SEO">
+                    <div class="layer">
+                        <div class="layer-text">Seo optimization</div>
+                    </div>
+                </li>
+                <li class="image_all apps">
+                    <img src="./assets/images/work_app.jpg" alt="Apliakcja bankowa">
+                    <div class="layer">
+                        <div class="layer-text">Financial apps</div>
+                    </div>
+                </li>
+                <li class="image_all code">
+                    <img src="./assets/images/work_rwd.png" alt="Różne ekrany">
+                    <div class="layer">
+                        <div class="layer-text">RWD</div>
+                    </div>
+                </li>
+                <li class="image_all design">
+                    <img src="./assets/images/work_still-life.jpg" alt="Martwa natura">
+                    <div class="layer">
+                        <div class="layer-text">Still life</div>
+                    </div>
+                </li>
+                <li class="image_all apps">
+                    <img src="./assets/images/work_app-mobile.jpg" alt="Aplikacje na smartfon">
+                    <div class="layer">
+                        <div class="layer-text">Mobile apps</div>
+                    </div>
+                </li>
+                <li class="image_all apps">
+                    <img src="./assets/images/work_social.jpg" alt="Social media foto">
+                    <div class="layer">
+                        <div class="layer-text">Social media</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Section Clients -->
+    <section class="clients" id="clients">
+        <div class="clients-text container">
+            <h2 class="clients-title text-uppercase">Our clients</h2>
+            <p class="clients-paragraph">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed,
+                convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+        </div>
+        <div class="clients-carousel container">
+            <div id="clientsCarouselIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#clientsCarouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#clientsCarouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#clientsCarouselIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_1.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_2.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_3.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_2.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_4.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_1.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_3.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_1.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_4.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <script src="assets/js/script.js"></script>
