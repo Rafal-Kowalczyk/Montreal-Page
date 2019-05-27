@@ -1,22 +1,21 @@
-$(function() {
+$(function () {
 
     // portfolio gallery
-    $('.nav-item').click(function(e) {
-        e.preventDefault();
+    $('.nav-item').click(function () {
         $('.nav-item').removeClass('active');
         $(this).addClass('active');
         return false;
     });
 
-    $(function() {
+    $(function () {
 
         var selectedClass = "";
-        $('.nav-item').click(function() {
-            //e.preventDefault();
+
+        $('.nav-item').click(function () {
             selectedClass = $(this).attr('data-rel');
-            $('.portfolio-images li').fadeOut(500);
+            $('.portfolio-images li').fadeOut(250);
             $('.portfolio-images li.' + selectedClass).delay(300).fadeIn(300);
-        })
+        });
     });
 
 

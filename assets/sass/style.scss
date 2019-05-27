@@ -16,7 +16,6 @@ header {
             height: 50px;
             z-index: 9;
             cursor: pointer;
-            transition: left 500ms $easing;
             background-color: $color-yellow;
             display: flex;
             flex-direction: column;
@@ -37,8 +36,6 @@ header {
         }
 
         #menu-hamburger.active {
-            right: 50px;
-
             #top {
                 transform: translateY(10px) rotate(-135deg);
             }
@@ -65,7 +62,7 @@ header {
             height: 100%;
             background-color: $color-yellow;
             color: $color-black;
-            transition: all 350ms $easing;
+            transition: all 500ms $easing;
             font-size: 0.8em;
         }
 
@@ -138,11 +135,11 @@ header {
             @include button;
             width: 160px;
             background-color: $color-black;
+            transition: $transition-button;
 
             &:hover a {
                 text-decoration: none;
                 color: $color-yellow;
-                transition: transform 0.5s;
                 cursor: pointer;
             }
 
@@ -164,7 +161,7 @@ header {
 
     .motto-paragraph {
         margin: 0 auto;
-        width: 80%;
+        width: 90%;
         font-size: 0.7em;
         letter-spacing: $letter-spacing;
         line-height: 1.2;
@@ -174,8 +171,7 @@ header {
 
 /* Section Services */
 .services {
-    padding: 50px 0;
-
+    padding: 50px 30px;
 
     .services-icon {
         width: 75px;
@@ -194,7 +190,7 @@ header {
 
     .services-paragraph {
         font-size: 0.8em;
-        line-height: 1.1;
+        line-height: $line-height-par;
         margin-bottom: 40px;
     }
 
@@ -206,6 +202,7 @@ header {
         font-size: 0.8em;
         text-transform: uppercase;
         margin: 20px auto;
+        transition: $transition-button;
 
         //outline: none;
         &:hover {
@@ -219,12 +216,43 @@ header {
 .portfolio {
     background-color: $color-black;
     color: $color-yellow;
+
     .portfolio-text {
-    padding: 30px 0;
+        padding: 50px 30px;
+        .portfolio-paragraph {
+            font-size: 0.8em;
+            line-height: $line-height-par;
+            margin-bottom: 40px;
+        }
+        .portfolio-nav {
+            display: flex;
+            justify-content: center;
+            button {
+                border: 2px solid $color-yellow;
+                background-color: $color-black;
+                margin: 0 5px;
+                padding: 0;
+                transition: $transition-button;
+                    &:hover {
+                        background-color: $color-yellow;
+                    }
+                a {
+                padding: 5px 10px;
+                color: $color-yellow;
+                text-decoration: none;
+                    &:hover {
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+
     }
 }
+
 .portfolio-wrapper {
     background-color: $color-yellow;
+
     .portfolio-images {
         display: flex;
         flex-wrap: wrap;
@@ -232,13 +260,14 @@ header {
         justify-content: center;
         align-items: center;
         background-color: $color-yellow;
-        padding: 20px 0;
+        padding: 10px 0;
+        margin: 0;
 
         .image_all {
             position: relative;
             margin: 10px;
-            width: 300px;
-            height: 200px;
+            width: 320px;
+            height: 180px;
             list-style: none;
 
 
@@ -251,7 +280,7 @@ header {
             &:hover {
                 .layer {
                     opacity: 1;
-                    background-color: rgba($color-black, .7);
+                    background-color: rgba($color-black, .8);
                 }
             }
 
@@ -266,15 +295,15 @@ header {
             width: 100%;
             height: 100%;
             opacity: 0;
-            transition: .5s ease;
+            transition: $transition-button ease;
             padding: 10px;
 
             .layer-text {
                 color: $color-yellow;
                 position: absolute;
-                left: 15%;
+                left: 10%;
                 bottom: 10%;
-                font-size: 2em;
+                font-size: 1.5em;
             }
         }
     }
