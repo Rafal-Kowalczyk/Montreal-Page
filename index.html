@@ -40,7 +40,7 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#clients">Clients</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -226,8 +226,39 @@
             </div>
         </div>
     </section>
+     <!-- Section Contact -->
+    <section class="contact container" id="contact">
+        <div class="contact-text">
+            <h2 class="contact-title text-uppercase">Contact us</h2>
+            <p class="contact-paragraph">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed,
+                convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+        </div>
+        <form class="contact-form ">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <label>Name</label>
+                    <input type="text" pattern="[a-zA-Z]+" minlength="3" required />
+                </div>
+                <div class="col-12 col-md-6">
+                    <label>Mail</label>
+                    <input type="email" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label>Subject</label>
+                    <input type="text" minlength="3" required />
+                </div>
+                <div class="col-12">
+                    <textarea placeholder="Message..." minlength="3" required></textarea>
+                </div>
+            </div>
+            <div class="form-button text-center">
+                <button class="submit-btn" type="submit">Send</button>
+            </div>
+        </form>
 
-
+    </section>
 
     <script src="assets/js/script.js"></script>
 </body>

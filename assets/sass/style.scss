@@ -196,7 +196,7 @@ header {
 
     .services-button {
         @include button;
-        width: 240px;
+        width: $width-button-section;
         background-color: $color-white;
         color: $color-black;
         font-size: 0.8em;
@@ -221,7 +221,7 @@ header {
         padding: 50px 30px;
 
         .portfolio-paragraph {
-            font-size: 0.8em;
+            font-size: $font-size-paragraph;
             line-height: $line-height-par;
             margin-bottom: 40px;
         }
@@ -328,7 +328,7 @@ header {
 
         .clients-paragraph {
             color: $color-white;
-            font-size: 0.8em;
+            font-size: $font-size-paragraph;
             line-height: $line-height-par;
             margin-bottom: 30px;
         }
@@ -336,7 +336,7 @@ header {
 
     .clients-carousel {
         color: $color-yellow;
-        padding: 0 30px;
+        padding: 0 ;
 
         .carousel-indicators {
             margin-bottom: 0;
@@ -359,13 +359,47 @@ header {
             align-items: center;
             min-height: 220px;
             max-height: 300px;
-
-            img {
-                margin-top: 10px;
-                margin-bottom: 30px;
-                padding: 0 20px;
-                width: 100%;
+            .clients-carousel_logo {
+                padding: 0;
+                text-align: center;
+                img {
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                    padding: 0 20px;
+                    width: 90%;
+                }
             }
+        }
+    }
+}
+
+/* Section Contact */
+
+.contact {
+    padding: 50px 30px;
+    .contact-text {
+        .contact-title {
+            color: $color-yellow;
+        }
+
+        .contact-paragraph {
+            font-size: $font-size-paragraph;
+            line-height: $line-height-par;
+            margin-bottom: 50px;
+        }
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        input,
+        textarea {
+            width: 100%;
+        }
+        button {
+            @include button;
+            width: $width-button-section;
         }
     }
 }

@@ -208,7 +208,7 @@ header .hero .hero-button a {
 
 .services .services-paragraph {
   font-size: 0.8em;
-  line-height: 1.1;
+  line-height: 1.4;
   margin-bottom: 40px;
 }
 
@@ -242,7 +242,7 @@ header .hero .hero-button a {
 
 .portfolio .portfolio-text .portfolio-paragraph {
   font-size: 0.8em;
-  line-height: 1.1;
+  line-height: 1.4;
   margin-bottom: 40px;
 }
 
@@ -341,13 +341,13 @@ header .hero .hero-button a {
 .clients .clients-text .clients-paragraph {
   color: white;
   font-size: 0.8em;
-  line-height: 1.1;
+  line-height: 1.4;
   margin-bottom: 30px;
 }
 
 .clients .clients-carousel {
   color: #f2c81e;
-  padding: 0 30px;
+  padding: 0;
 }
 
 .clients .clients-carousel .carousel-indicators {
@@ -373,11 +373,49 @@ header .hero .hero-button a {
   max-height: 300px;
 }
 
-.clients .clients-carousel .carousel-inner img {
+.clients .clients-carousel .carousel-inner .clients-carousel_logo {
+  padding: 0;
+  text-align: center;
+}
+
+.clients .clients-carousel .carousel-inner .clients-carousel_logo img {
   margin-top: 10px;
   margin-bottom: 30px;
   padding: 0 20px;
+  width: 90%;
+}
+
+/* Section Contact */
+.contact {
+  padding: 50px 30px;
+}
+
+.contact .contact-text .contact-title {
+  color: #f2c81e;
+}
+
+.contact .contact-text .contact-paragraph {
+  font-size: 0.8em;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
   width: 100%;
+}
+
+.contact .contact-form button {
+  border: 2px solid #f2c81e;
+  border-radius: 20px;
+  height: 50px;
+  width: 240px;
 }
 
 /*# sourceMappingURL=style.css.map */
