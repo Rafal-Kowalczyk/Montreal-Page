@@ -344,4 +344,58 @@ header .hero .hero-button a {
   bottom: 10%;
   font-size: 1.5em;
 }
+
+/* Section Clients */
+.clients {
+  background-color: #17191e;
+  padding: 50px 30px 20px;
+}
+
+.clients .clients-text .clients-title {
+  color: #f2c81e;
+}
+
+.clients .clients-text .clients-paragraph {
+  color: white;
+  font-size: 0.8em;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.clients .clients-carousel {
+  color: #f2c81e;
+  padding: 0 30px;
+}
+
+.clients .clients-carousel .carousel-indicators {
+  margin-bottom: 0;
+}
+
+.clients .clients-carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  opacity: 1;
+  margin: 0 6px;
+}
+
+.clients .clients-carousel .carousel-indicators li.active {
+  background: #f2c81e;
+}
+
+.clients .clients-carousel .carousel-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  min-height: 220px;
+  max-height: 300px;
+}
+
+.clients .clients-carousel .carousel-inner img {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  width: 100%;
+}
 /*# sourceMappingURL=style.prefixed.css.map */

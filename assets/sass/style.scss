@@ -219,27 +219,33 @@ header {
 
     .portfolio-text {
         padding: 50px 30px;
+
         .portfolio-paragraph {
             font-size: 0.8em;
             line-height: $line-height-par;
             margin-bottom: 40px;
         }
+
         .portfolio-nav {
             display: flex;
             justify-content: center;
+
             button {
                 border: 2px solid $color-yellow;
                 background-color: $color-black;
                 margin: 0 5px;
                 padding: 0;
                 transition: $transition-button;
-                    &:hover {
-                        background-color: $color-yellow;
-                    }
+
+                &:hover {
+                    background-color: $color-yellow;
+                }
+
                 a {
-                padding: 5px 10px;
-                color: $color-yellow;
-                text-decoration: none;
+                    padding: 5px 10px;
+                    color: $color-yellow;
+                    text-decoration: none;
+
                     &:hover {
                         color: $color-black;
                     }
@@ -304,6 +310,61 @@ header {
                 left: 10%;
                 bottom: 10%;
                 font-size: 1.5em;
+            }
+        }
+    }
+}
+
+/* Section Clients */
+
+.clients {
+    background-color: $color-black;
+    padding: 50px 30px 20px;
+
+    .clients-text {
+        .clients-title {
+            color: $color-yellow;
+        }
+
+        .clients-paragraph {
+            color: $color-white;
+            font-size: 0.8em;
+            line-height: $line-height-par;
+            margin-bottom: 30px;
+        }
+    }
+
+    .clients-carousel {
+        color: $color-yellow;
+        padding: 0 30px;
+
+        .carousel-indicators {
+            margin-bottom: 0;
+
+            li {
+                width: 10px;
+                height: 10px;
+                border: 0;
+                opacity: 1;
+                margin: 0 6px;
+
+                &.active {
+                    background: $color-yellow;
+                }
+            }
+        }
+
+        .carousel-inner {
+            display: flex;
+            align-items: center;
+            min-height: 220px;
+            max-height: 300px;
+
+            img {
+                margin-top: 10px;
+                margin-bottom: 30px;
+                padding: 0 20px;
+                width: 100%;
             }
         }
     }
