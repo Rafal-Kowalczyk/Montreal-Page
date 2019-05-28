@@ -226,38 +226,35 @@
             </div>
         </div>
     </section>
-     <!-- Section Contact -->
+    <!-- Section Contact -->
     <section class="contact container" id="contact">
         <div class="contact-text">
             <h2 class="contact-title text-uppercase">Contact us</h2>
             <p class="contact-paragraph">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed,
                 convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
         </div>
-        <form class="contact-form ">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <label>Name</label>
+        <form class="contact-form">
+            <div class="row m-0 p-0">
+                <div class="col-12 col-md-6 form-item">
                     <input type="text" pattern="[a-zA-Z]+" minlength="3" required />
+                    <label>Name</label>
                 </div>
-                <div class="col-12 col-md-6">
-                    <label>Mail</label>
+                <div class="col-12 col-md-6 form-item">
                     <input type="email" required />
+                    <label>Mail</label>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <label>Subject</label>
+                <div class="col-12 form-item subject">
                     <input type="text" minlength="3" required />
+                    <label>Subject</label>
                 </div>
-                <div class="col-12">
+                <div class="col-12 form-item">
                     <textarea placeholder="Message..." minlength="3" required></textarea>
                 </div>
-            </div>
-            <div class="form-button text-center">
-                <button class="submit-btn" type="submit">Send</button>
+                <div class="form-button text-center">
+                    <button class="submit-btn text-uppercase" type="submit">Send</button>
+                </div>
             </div>
         </form>
-
     </section>
 
     <script src="assets/js/script.js"></script>

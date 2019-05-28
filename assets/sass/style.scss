@@ -336,7 +336,7 @@ header {
 
     .clients-carousel {
         color: $color-yellow;
-        padding: 0 ;
+        padding: 0;
 
         .carousel-indicators {
             margin-bottom: 0;
@@ -359,14 +359,16 @@ header {
             align-items: center;
             min-height: 220px;
             max-height: 300px;
+
             .clients-carousel_logo {
                 padding: 0;
                 text-align: center;
+
                 img {
                     margin-top: 10px;
                     margin-bottom: 30px;
                     padding: 0 20px;
-                    width: 90%;
+                    width: 100%;
                 }
             }
         }
@@ -377,6 +379,7 @@ header {
 
 .contact {
     padding: 50px 30px;
+
     .contact-text {
         .contact-title {
             color: $color-yellow;
@@ -385,21 +388,75 @@ header {
         .contact-paragraph {
             font-size: $font-size-paragraph;
             line-height: $line-height-par;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
     }
+
     .contact-form {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        padding: 0;
 
         input,
         textarea {
             width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            padding-top: .6rem;
+            padding-bottom: .6rem;
+            outline: none;
+            border: 1px solid $color-black;
+            background: none;
+            color: $color-black;
+            text-transform: uppercase;
+            text-decoration: none;
         }
-        button {
-            @include button;
-            width: $width-button-section;
+
+        div {
+            position: relative;
+            width: 100%;
+            margin-top: 2rem;
+            padding: 0 8px;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        div label {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            transition: .5s;
+            pointer-events: none;
         }
     }
+
+    input:focus~label,
+    textarea:focus~label,
+    input:valid~label,
+    textarea:valid~label {
+        top: -18px;
+        left: 15px;
+        font-size: 0.9em;
+    }
+
+    textarea::placeholder {
+        color: $color-black;
+    }
+
+    .contact-form input:focus:invalid {
+        border-bottom: 2px solid red;
+    }
+
+    .contact-form input:focus:valid {
+        border-bottom: 2px solid green;
+    }
+
+    button {
+        @include button;
+        width: $width-button-section;
+        background-color: $color-white;
+    }
+
 }

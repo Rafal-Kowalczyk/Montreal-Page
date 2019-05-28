@@ -401,7 +401,7 @@ header .hero .hero-button a {
   margin-top: 10px;
   margin-bottom: 30px;
   padding: 0 20px;
-  width: 90%;
+  width: 100%;
 }
 
 /* Section Contact */
@@ -416,7 +416,7 @@ header .hero .hero-button a {
 .contact .contact-text .contact-paragraph {
   font-size: 0.8em;
   line-height: 1.4;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .contact .contact-form {
@@ -426,17 +426,73 @@ header .hero .hero-button a {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0;
 }
 
 .contact .contact-form input,
 .contact .contact-form textarea {
   width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  outline: none;
+  border: 1px solid #17191e;
+  background: none;
+  color: #17191e;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.contact .contact-form button {
+.contact .contact-form div {
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 8px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.contact .contact-form div label {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  transition: .5s;
+  pointer-events: none;
+}
+
+.contact input:focus ~ label,
+.contact textarea:focus ~ label,
+.contact input:valid ~ label,
+.contact textarea:valid ~ label {
+  top: -18px;
+  left: 15px;
+  font-size: 0.9em;
+}
+
+.contact textarea:-ms-input-placeholder {
+  color: #17191e;
+}
+
+.contact textarea::placeholder {
+  color: #17191e;
+}
+
+.contact .contact-form input:focus:invalid {
+  border-bottom: 2px solid red;
+}
+
+.contact .contact-form input:focus:valid {
+  border-bottom: 2px solid green;
+}
+
+.contact button {
   border: 2px solid #f2c81e;
   border-radius: 20px;
   height: 50px;
   width: 240px;
+  background-color: white;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
