@@ -36,5 +36,8 @@
     "parallelshell": "^3.0.2",
     "rimraf": "^2.6.3"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2"
+  }
 }
