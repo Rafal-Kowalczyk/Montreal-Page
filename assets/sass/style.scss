@@ -459,6 +459,9 @@ header {
         background-color: $color-white;
     }
 }
+
+/* Section Contact-icon */
+
 .contact-icon {
     background-color: $color-yellow;
     padding: $padding-section;
@@ -475,14 +478,47 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-left: 30px
         }
 
         p {
             margin: 0;
             font-size: 1.2em;
             display: flex;
-            flex-grow: 2;
+            flex-grow: 1;
             justify-content: center;
+        }
+    }
+}
+/* Footer */
+
+footer {
+    background-color: $color-black;
+    padding: 50px 30px 10px;
+    color: $color-white;
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        p {
+            font-size: 0.9em;
+            letter-spacing: $letter-spacing;
+            span {
+                color: $color-yellow;
+            }
+        }
+        .footer-social {
+            margin-bottom: 10px;
+            i {
+                color: $color-white;
+                margin: 0 10px;
+                font-size: 0.6em;
+            }
+        }
+        .footer-button {
+            width: 30px;
+            height: 30px;
+            background-color: $color-yellow;
+            border: none;
         }
     }
 }

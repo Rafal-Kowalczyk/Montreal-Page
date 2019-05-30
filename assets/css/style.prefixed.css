@@ -496,6 +496,7 @@ header .hero .hero-button a {
   background-color: white;
 }
 
+/* Section Contact-icon */
 .contact-icon {
   background-color: #f2c81e;
   padding: 50px 30px;
@@ -521,6 +522,7 @@ header .hero .hero-button a {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  margin-left: 30px;
 }
 
 .contact-icon .contact-icon_box p {
@@ -528,9 +530,49 @@ header .hero .hero-button a {
   font-size: 1.2em;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-positive: 2;
-      flex-grow: 2;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
   -ms-flex-pack: center;
       justify-content: center;
+}
+
+/* Footer */
+footer {
+  background-color: #17191e;
+  padding: 50px 30px 10px;
+  color: white;
+}
+
+footer .footer-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+footer .footer-wrapper p {
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+footer .footer-wrapper p span {
+  color: #f2c81e;
+}
+
+footer .footer-wrapper .footer-social {
+  margin-bottom: 10px;
+}
+
+footer .footer-wrapper .footer-social i {
+  color: white;
+  margin: 0 10px;
+  font-size: 0.6em;
+}
+
+footer .footer-wrapper .footer-button {
+  width: 30px;
+  height: 30px;
+  background-color: #f2c81e;
+  border: none;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
