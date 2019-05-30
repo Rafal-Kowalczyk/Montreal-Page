@@ -31,7 +31,7 @@ header .menu-wrapper {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  padding: 30px;
+  padding: 50px 30px;
 }
 
 header .menu-wrapper #menu-hamburger {
@@ -140,7 +140,7 @@ header .menu-wrapper #menu-content {
 
 header .hero {
   margin-top: 20px;
-  padding: 30px;
+  padding: 50px 30px;
 }
 
 header .hero .hero-title {
@@ -401,7 +401,7 @@ header .hero .hero-button a {
   margin-top: 10px;
   margin-bottom: 30px;
   padding: 0 20px;
-  width: 100%;
+  width: 95%;
 }
 
 /* Section Contact */
@@ -494,5 +494,43 @@ header .hero .hero-button a {
   height: 50px;
   width: 240px;
   background-color: white;
+}
+
+.contact-icon {
+  background-color: #f2c81e;
+  padding: 50px 30px;
+}
+
+.contact-icon .contact-icon_box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 15px 0;
+}
+
+.contact-icon .contact-icon_box span {
+  width: 60px;
+  height: 60px;
+  background-color: #17191e;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.contact-icon .contact-icon_box p {
+  margin: 0;
+  font-size: 1.2em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-positive: 2;
+      flex-grow: 2;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 /*# sourceMappingURL=style.prefixed.css.map */

@@ -171,7 +171,7 @@ header {
 
 /* Section Services */
 .services {
-    padding: 50px 30px;
+    padding: $padding-section;
 
     .services-icon {
         width: 75px;
@@ -218,7 +218,7 @@ header {
     color: $color-yellow;
 
     .portfolio-text {
-        padding: 50px 30px;
+        padding: $padding-section;
 
         .portfolio-paragraph {
             font-size: $font-size-paragraph;
@@ -368,7 +368,7 @@ header {
                     margin-top: 10px;
                     margin-bottom: 30px;
                     padding: 0 20px;
-                    width: 100%;
+                    width: 95%;
                 }
             }
         }
@@ -378,7 +378,7 @@ header {
 /* Section Contact */
 
 .contact {
-    padding: 50px 30px;
+    padding: $padding-section;
 
     .contact-text {
         .contact-title {
@@ -458,5 +458,31 @@ header {
         width: $width-button-section;
         background-color: $color-white;
     }
+}
+.contact-icon {
+    background-color: $color-yellow;
+    padding: $padding-section;
+    .contact-icon_box  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
 
+        span {
+            width: 60px;
+            height: 60px;
+            background-color: $color-black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.2em;
+            display: flex;
+            flex-grow: 2;
+            justify-content: center;
+        }
+    }
 }
