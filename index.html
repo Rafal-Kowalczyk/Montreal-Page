@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Montreal Page by RK|web</title>
+    <title>Montreal Page by RK | web</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -20,10 +21,282 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <header>
+        <nav class="menu-wrapper container">
+            <div class="menu-logo">
+                <a href="#">
+                    <img src="./assets/images/brand.png" alt="Montreal logo">
+                </a>
+            </div>
+            <div id="menu-hamburger">
+                <div id="top" class="habmurger-line"></div>
+                <div id="middle" class="habmurger-line"></div>
+                <div id="bottom" class="habmurger-line"></div>
+            </div>
+            <div id="menu-content">
+                <ul class="menu-content-items">
+                    <li><a href="#motto">Motto</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero container" id="hero">
+            <h1 class="hero-title">Wake the design</h1>
+            <p class="hero-paragraph">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam
+                sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada. Nulla
+                porttitor accumsan tincidunt.</p>
+            <a class="button hero-button" href="#">Who we are?</a>
+        </section>
+    </header>
+    <!-- Section motto -->
+    <section class="motto container-fluid" id="motto">
+        <p class="motto-paragraph container">“Donec rutrum congue leo eget malesuada. Vivamus magna justo, lacinia eget
+            consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non
+            nisi.”</p>
+    </section>
+    <!-- Section Services -->
+    <section class="services container" id="services">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="services-icon">
+                    <img src="./assets/images/service_coding.png" alt="Design icon">
+                </div>
+                <h2 class="services-title">Coding</h2>
+                <p class="services-paragraph">Soluta consequat no has. Has ex deleniti consulatu, tamquam </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="services-icon">
+                    <img src="./assets/images/service_apps.png" alt="Design icon">
+                </div>
+                <h2 class="services-title">Apps</h2>
+                <p class="services-paragraph">Soluta consequat no has. Has ex deleniti consulatu, tamquam interpretaris
+                    sit ex vivendum ullamcorper et his.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="services-icon">
+                    <img src="./assets/images/service_design.png" alt="Design icon">
+                </div>
+                <h2 class="services-title">Design</h2>
+                <p class="services-paragraph">Soluta consequat no has. Has ex deleniti consulatu, tamquam interpretaris
+                    sit ex vivendum ullamcorper et his.</p>
+            </div>
+        </div>
+        <div class="col text-center">
+            <a class="button services-button" href="#">Launch Project Now</a>
+        </div>
+    </section>
+    <!-- Section Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-text container">
+            <h2 class="portfolio-title text-uppercase">Works so far ...</h2>
+            <p class="portfolio-paragraph">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed,
+                convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
 
-
-
-
+            <div class="row">
+                <div class="col portfolio-nav">
+                    <a href="#" class="nav-item active" data-rel="image_all">All</a>
+                    <a href="#" class="nav-item" data-rel="apps">Apps</a>
+                    <a href="#" class="nav-item" data-rel="code">Code</a>
+                    <a href="#" class="nav-item" data-rel="design">Design</a>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-wrapper">
+            <ul class="portfolio-images ">
+                <li class="image_all code">
+                    <img src="./assets/images/work_code.png" alt="Ekran z kodem HTML">
+                    <div class="layer">
+                        <div class="layer-text">Semantic code</div>
+                    </div>
+                </li>
+                <li class="image_all design">
+                    <img src="./assets/images/work_photo.jpg" alt="Obiektywy fotograficzne">
+                    <div class="layer">
+                        <div class="layer-text">Professional equipment</div>
+                    </div>
+                <li class="image_all code">
+                    <img src="./assets/images/work_seo.png" alt="Grafika SEO">
+                    <div class="layer">
+                        <div class="layer-text">Seo optimization</div>
+                    </div>
+                </li>
+                <li class="image_all apps">
+                    <img src="./assets/images/work_app.jpg" alt="Apliakcja bankowa">
+                    <div class="layer">
+                        <div class="layer-text">Financial apps</div>
+                    </div>
+                </li>
+                <li class="image_all code">
+                    <img src="./assets/images/work_rwd.png" alt="Różne ekrany">
+                    <div class="layer">
+                        <div class="layer-text">RWD</div>
+                    </div>
+                </li>
+                <li class="image_all design">
+                    <img src="./assets/images/work_still-life.jpg" alt="Martwa natura">
+                    <div class="layer">
+                        <div class="layer-text">Still life</div>
+                    </div>
+                </li>
+                <li class="image_all apps">
+                    <img src="./assets/images/work_app-mobile.jpg" alt="Aplikacje na smartfon">
+                    <div class="layer">
+                        <div class="layer-text">Mobile apps</div>
+                    </div>
+                </li>
+                <li class="image_all apps">
+                    <img src="./assets/images/work_social.jpg" alt="Social media foto">
+                    <div class="layer">
+                        <div class="layer-text">Social media</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Section Clients -->
+    <section class="clients" id="clients">
+        <div class="clients-text container">
+            <h2 class="clients-title text-uppercase">Our clients</h2>
+            <p class="clients-paragraph">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed,
+                convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+        </div>
+        <div class="clients-carousel container">
+            <div id="clientsCarouselIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#clientsCarouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#clientsCarouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#clientsCarouselIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_1.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_2.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_3.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_2.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_4.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_1.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_3.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_1.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_4.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 clients-carousel_logo">
+                                <img src="./assets/images/client_2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Contact -->
+    <section class="contact container" id="contact">
+        <div class="contact-text">
+            <h2 class="contact-title text-uppercase">Contact us</h2>
+            <p class="contact-paragraph">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed,
+                convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+        </div>
+        <form class="contact-form">
+            <div class="row m-0 p-0">
+                <div class="col-12 col-md-6 form-item">
+                    <input type="text" pattern="[a-zA-Z]+" minlength="3" required />
+                    <label>Name</label>
+                </div>
+                <div class="col-12 col-md-6 form-item">
+                    <input type="email" required />
+                    <label>Mail</label>
+                </div>
+                <div class="col-12 form-item subject">
+                    <input type="text" minlength="3" required />
+                    <label>Subject</label>
+                </div>
+                <div class="col-12 form-item">
+                    <textarea placeholder="Message..." minlength="3" required></textarea>
+                </div>
+                <div class="form-button text-center">
+                    <button class="submit-btn text-uppercase" type="submit">Send</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- Section Contact-icon -->
+    <section class="contact-icon container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 contact-icon_box">
+                    <span>
+                        <img src="./assets/images/contact_phone.png" alt="Numer telefonu">
+                    </span>
+                    <p>858-665-298</p>
+                </div>
+                <div class="col-12 col-md-4 contact-icon_box">
+                    <span>
+                        <img src="./assets/images/contact_mail.png" alt="Adres e-mail">
+                    </span>
+                    <p>montreal@mail.com</p>
+                </div>
+                <div class="col-12 col-md-4 contact-icon_box">
+                    <span>
+                        <img src="./assets/images/contact_address.png" alt="Adres e-mail">
+                    </span>
+                    <p>4116 Oak Avenue <br>
+                        Chicago, IL 60607</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper container">
+            <div class="footer-text text-center">
+                <p><span>Montreal</span> All Right Reserved</p>
+            </div>
+            <div class="footer-social text-center">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <!-- <button class="footer-button align-self-end"> -->
+                <a class="button footer-button align-self-end" href="#"><i class=" fas fa-angle-up"></i></a>
+            <!-- </button> -->
+        </div>
+    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>
