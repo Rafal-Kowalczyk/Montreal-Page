@@ -271,8 +271,8 @@ header .hero .hero-button:hover {
 .portfolio .portfolio-text .portfolio-nav .nav-item {
   border: 2px solid #f2c81e;
   background-color: #17191e;
-  margin: 0 5px;
-  padding: 5px 20px;
+  margin: 0 8px;
+  padding: 5px 15px;
   color: #f2c81e;
   text-decoration: none;
   transition: 0.5s;
@@ -360,6 +360,10 @@ header .hero .hero-button:hover {
   padding: 50px 30px 20px;
 }
 
+.clients .clients-text {
+  padding: 0;
+}
+
 .clients .clients-text .clients-title {
   color: #f2c81e;
 }
@@ -409,8 +413,8 @@ header .hero .hero-button:hover {
 .clients .clients-carousel .carousel-inner .clients-carousel_logo img {
   margin-top: 10px;
   margin-bottom: 30px;
-  padding: 0 20px;
-  width: 80%;
+  padding: 0;
+  width: 75%;
 }
 
 /* Section Contact */

@@ -238,8 +238,8 @@ header {
             .nav-item {
                 border: 2px solid $color-yellow;
                 background-color: $color-black;
-                margin: 0 5px;
-                padding: 5px 20px;
+                margin: 0 8px;
+                padding: 5px 15px;
                 color: $color-yellow;
                 text-decoration: none;
                 transition: $button-transition;
@@ -331,6 +331,7 @@ header {
     padding: 50px 30px 20px;
 
     .clients-text {
+        padding: 0;
         .clients-title {
             color: $color-yellow;
         }
@@ -376,8 +377,8 @@ header {
                 img {
                     margin-top: 10px;
                     margin-bottom: 30px;
-                    padding: 0 20px;
-                    width: 80%;
+                    padding: 0;
+                    width: 75%;
                 }
             }
         }
