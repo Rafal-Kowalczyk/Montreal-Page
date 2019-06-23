@@ -1,8 +1,8 @@
 @import "base";
 
-
+/* Header */
 header {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $color-black;
 
     .menu-wrapper {
@@ -11,10 +11,13 @@ header {
         align-items: center;
         padding: 20px 30px;
 
+        .menu-logo img {
+            width: 60px;
+        }
 
         #menu-hamburger {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             z-index: 9;
             cursor: pointer;
             background-color: $color-yellow;
@@ -24,7 +27,7 @@ header {
             align-items: center;
 
             .habmurger-line {
-                width: 30px;
+                width: 25px;
                 height: 3px;
                 margin-bottom: 8px;
                 background-color: $color-black;
@@ -116,25 +119,28 @@ header {
     }
 
     .hero {
-        margin-top: 40px;
-        padding: 0 30px;
+        margin-top: 4rem;
+        padding: 30px;
+        padding-top: 0;
+
 
         .hero-title {
             color: $color-yellow;
             text-transform: uppercase;
-            font-size: 4.8em;
+            font-size: 5em;
             line-height: 1;
             padding-bottom: 10px;
         }
 
         .hero-paragraph {
             color: $color-white;
-            font-size: 0.6em;
+            font-size: 0.7em;
             letter-spacing: $letter-spacing;
             padding-bottom: 20px;
         }
 
         .hero-button {
+            display: inline-block;
             @include button;
             padding: $button-padding;
             background-color: $color-black;
@@ -197,14 +203,15 @@ header {
 
     .services-button {
         margin: 30px auto;
-        .button{
+
+        .button {
             @include button;
             padding: $button-padding;
             background-color: $color-white;
             color: $color-black;
             font-size: 0.8em;
             text-transform: uppercase;
-        // margin: 20px auto;
+            // margin: 20px auto;
             transition: $button-transition;
             text-decoration: none;
 
@@ -340,6 +347,7 @@ header {
 
     .clients-text {
         padding: 0;
+
         .clients-title {
             color: $color-yellow;
         }
@@ -386,7 +394,7 @@ header {
                     margin-top: 10px;
                     margin-bottom: 30px;
                     padding: 0;
-                    width: 80%;
+                    width: 60%;
                 }
             }
         }
@@ -558,10 +566,4 @@ footer {
     }
 }
 
-
-// .sss {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: flex-start;
-// }
+@import "_media";

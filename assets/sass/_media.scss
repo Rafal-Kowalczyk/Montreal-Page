@@ -1,0 +1,147 @@
+@import "base";
+
+/*  Media breakpoint 576px */
+
+@media (min-width: 576px) {
+
+    /* Header */
+    header {
+        .menu-wrapper {
+            padding: 30px;
+        }
+
+        .hero {
+            margin-top: 6rem;
+
+            .hero-title {
+                font-size: 6em;
+            }
+        }
+    }
+
+    /* Section Clients */
+    .clients {
+        .clients-carousel {
+            .carousel-inner {
+                .clients-carousel_logo {
+                    img {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Media breakpoint 768px */
+
+@media (min-width: 768px) {
+
+    /* Header */
+    header {
+        .menu-wrapper {
+            padding: 30px;
+
+            .menu-logo img {
+                width: 80px;
+            }
+
+            #menu-hamburger {
+                width: 50px;
+                height: 50px;
+            }
+
+            #menu-content {
+                font-size: 1.2em;
+            }
+        }
+
+        .hero {
+            margin-top: 8rem;
+
+            .hero-title {
+                font-size: 7em;
+            }
+
+            .hero-paragraph {
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    /* Section Clients */
+    .clients {
+        .clients-carousel {
+            .carousel-inner {
+                .clients-carousel_logo {
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Section Contact-icon */
+
+    .contact-icon {
+        .contact-icon_box {
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+/*  Media breakpoint 992px */
+
+@media (min-width: 992px) {
+
+    /* Header */
+    header {
+        .hero {
+            margin-top: 5rem;
+
+            .hero-title {
+                font-size: 9em;
+            }
+
+            .hero-paragraph {
+                font-size: 0.9em;
+            }
+        }
+    }
+
+    /* Section Clients */
+    .clients {
+        .clients-carousel {
+            .carousel-inner {
+                .clients-carousel_logo {
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  Media breakpoint 1200px */
+
+@media (min-width: 1200px) {
+
+    /* Header */
+    header {
+        .hero {
+            margin-top: 5rem;
+
+            .hero-title {
+                font-size: 10em;
+            }
+
+            .hero-paragraph {
+                font-size: 0.9em;
+            }
+        }
+    }
+}
