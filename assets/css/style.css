@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css?family=Abel");
 body {
   width: 100%;
   margin: 0 auto;
@@ -19,8 +20,9 @@ body {
   clear: both;
 }
 
+/* Header */
 header {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #17191e;
 }
 
@@ -31,9 +33,13 @@ header .menu-wrapper {
   padding: 20px 30px;
 }
 
+header .menu-wrapper .menu-logo img {
+  width: 60px;
+}
+
 header .menu-wrapper #menu-hamburger {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   z-index: 9;
   cursor: pointer;
   background-color: #f2c81e;
@@ -44,7 +50,7 @@ header .menu-wrapper #menu-hamburger {
 }
 
 header .menu-wrapper #menu-hamburger .habmurger-line {
-  width: 30px;
+  width: 25px;
   height: 3px;
   margin-bottom: 8px;
   background-color: #17191e;
@@ -132,26 +138,28 @@ header .menu-wrapper #menu-content {
 }
 
 header .hero {
-  margin-top: 40px;
-  padding: 0 30px;
+  margin-top: 4rem;
+  padding: 30px;
+  padding-top: 0;
 }
 
 header .hero .hero-title {
   color: #f2c81e;
   text-transform: uppercase;
-  font-size: 4.8em;
+  font-size: 5em;
   line-height: 1;
   padding-bottom: 10px;
 }
 
 header .hero .hero-paragraph {
   color: white;
-  font-size: 0.6em;
+  font-size: 0.7em;
   letter-spacing: 0.5px;
   padding-bottom: 20px;
 }
 
 header .hero .hero-button {
+  display: inline-block;
   border: 2px solid #f2c81e;
   border-radius: 20px;
   padding: 15px 40px;
@@ -401,7 +409,7 @@ header .hero .hero-button:hover {
   margin-top: 10px;
   margin-bottom: 30px;
   padding: 0;
-  width: 80%;
+  width: 60%;
 }
 
 /* Section Contact */
@@ -563,6 +571,111 @@ footer .footer-wrapper .footer-button {
 
 footer .footer-wrapper .footer-button .fas {
   color: #17191e;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Abel", sans-serif;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.row:after, .row:before {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/*  Media breakpoint 576px */
+@media (min-width: 576px) {
+  /* Header */
+  header .menu-wrapper {
+    padding: 30px;
+  }
+  header .hero {
+    margin-top: 6rem;
+  }
+  header .hero .hero-title {
+    font-size: 6em;
+  }
+  /* Section Clients */
+  .clients .clients-carousel .carousel-inner .clients-carousel_logo img {
+    width: 40%;
+  }
+}
+
+/*  Media breakpoint 768px */
+@media (min-width: 768px) {
+  /* Header */
+  header .menu-wrapper {
+    padding: 30px;
+  }
+  header .menu-wrapper .menu-logo img {
+    width: 80px;
+  }
+  header .menu-wrapper #menu-hamburger {
+    width: 50px;
+    height: 50px;
+  }
+  header .menu-wrapper #menu-content {
+    font-size: 1.2em;
+  }
+  header .hero {
+    margin-top: 8rem;
+  }
+  header .hero .hero-title {
+    font-size: 7em;
+  }
+  header .hero .hero-paragraph {
+    font-size: 0.8em;
+  }
+  /* Section Clients */
+  .clients .clients-carousel .carousel-inner .clients-carousel_logo img {
+    width: 50%;
+  }
+  /* Section Contact-icon */
+  .contact-icon .contact-icon_box p {
+    font-size: 1em;
+  }
+}
+
+/*  Media breakpoint 992px */
+@media (min-width: 992px) {
+  /* Header */
+  header .hero {
+    margin-top: 5rem;
+  }
+  header .hero .hero-title {
+    font-size: 9em;
+  }
+  header .hero .hero-paragraph {
+    font-size: 0.9em;
+  }
+  /* Section Clients */
+  .clients .clients-carousel .carousel-inner .clients-carousel_logo img {
+    width: 50%;
+  }
+}
+
+/*  Media breakpoint 1200px */
+@media (min-width: 1200px) {
+  /* Header */
+  header .hero {
+    margin-top: 5rem;
+  }
+  header .hero .hero-title {
+    font-size: 10em;
+  }
+  header .hero .hero-paragraph {
+    font-size: 0.9em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
