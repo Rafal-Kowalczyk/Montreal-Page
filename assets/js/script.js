@@ -18,6 +18,14 @@ $(function () {
         });
     });
 
+    // scrollTop footer button
+    var footerButton = $('.footer-button');
+
+    $(footerButton).on('click', function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
 
 });
 

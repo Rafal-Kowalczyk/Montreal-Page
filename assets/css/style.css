@@ -548,6 +548,10 @@ footer .footer-wrapper p span {
   color: #f2c81e;
 }
 
+footer .footer-wrapper p .rk-logo img {
+  width: 50px;
+}
+
 footer .footer-wrapper .footer-social {
   margin-bottom: 10px;
 }
@@ -661,6 +665,14 @@ body {
   /* Section Clients */
   .clients .clients-carousel .carousel-inner .clients-carousel_logo img {
     width: 50%;
+  }
+  /* Footer */
+  footer .footer-wrapper .footer-button {
+    width: 40px;
+    height: 40px;
+  }
+  footer .footer-wrapper .footer-button .fas {
+    font-size: 1.5em;
   }
 }
 
