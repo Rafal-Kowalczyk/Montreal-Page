@@ -79,8 +79,8 @@ header .menu-wrapper #menu-content {
   z-index: 8;
   overflow: auto;
   top: 0;
-  right: -30%;
-  width: 30%;
+  right: -100%;
+  width: 100%;
   opacity: 0.5;
   padding: 20px 0;
   height: 100%;
@@ -105,7 +105,6 @@ header .menu-wrapper .menu-content-items {
 
 header .menu-wrapper .menu-content-items li {
   position: relative;
-  cursor: pointer;
   font-size: 1.5em;
   padding: 15px 0;
   transition: all 300ms;
@@ -113,12 +112,7 @@ header .menu-wrapper .menu-content-items li {
 }
 
 header .menu-wrapper .menu-content-items li:hover {
-  background: #17191e;
   transition: all 0.3s cubic-bezier(0.6, 0.05, 0.28, 0.91);
-}
-
-header .menu-wrapper .menu-content-items li:hover a {
-  color: #f2c81e;
 }
 
 header .menu-wrapper .menu-content-items li a {
@@ -126,6 +120,11 @@ header .menu-wrapper .menu-content-items li a {
   text-transform: uppercase;
   font-weight: bold;
   color: #17191e;
+}
+
+header .menu-wrapper .menu-content-items li a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #17191e;
 }
 
 header .menu-wrapper #menu-hamburger,
@@ -629,6 +628,8 @@ body {
     height: 50px;
   }
   header .menu-wrapper #menu-content {
+    right: -30%;
+    width: 30%;
     font-size: 1.2em;
   }
   header .hero {

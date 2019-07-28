@@ -14,7 +14,7 @@ $(function () {
         $('.nav-item').click(function () {
             selectedClass = $(this).attr('data-rel');
             $('.portfolio-images li').fadeOut(250);
-            $('.portfolio-images li.' + selectedClass).delay(300).fadeIn(300);
+            $('.portfolio-images li.' + selectedClass).delay(500).fadeIn(500);
         });
     });
 
@@ -31,8 +31,7 @@ $(function () {
 
 // sidebar
 const sidebarBox = document.querySelector('#menu-content'),
-    sidebarBtn = document.querySelector('#menu-hamburger'),
-    pageWrapper = document.querySelector('#hero');
+    sidebarBtn = document.querySelector('#menu-hamburger');
 
 sidebarBtn.addEventListener('click', function (event) {
     sidebarBtn.classList.toggle('active');
@@ -43,3 +42,5 @@ sidebarBox.addEventListener('click', function (event) {
     sidebarBtn.classList.toggle('active');
     sidebarBox.classList.toggle('active');
 });
+
+
